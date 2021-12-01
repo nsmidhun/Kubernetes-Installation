@@ -1,7 +1,7 @@
 ## K8S Master & Slave setup
 Create 3 GCP instances : 1 Master & 2 Worker Nodes
 
-####Execute the below commands on all 3 nodes (1 Master & 2 Worker Nodes):
+#### Execute the below commands on all 3 nodes (1 Master & 2 Worker Nodes):
 - sudo su -
 - apt update
 - apt install docker.io -y
@@ -21,7 +21,7 @@ Create 3 GCP instances : 1 Master & 2 Worker Nodes
 - systemctl restart docker.service
 - systemctl status docker.service
 
-####Master Node Alone
+#### Master Node Alone
 - kubeadm init
 - systemctl status kubelet
 - mkdir -p $HOME/.kube - creating a folder .kube 
@@ -34,6 +34,6 @@ Create 3 GCP instances : 1 Master & 2 Worker Nodes
 - kubectl get nodes
 - kubeadm token create --print-join-command
 
-####Worker Nodes Alone
+#### Worker Nodes Alone
 - Enter the kubeadm join command
 
