@@ -14,11 +14,9 @@ Create 3 GCP instances : 1 Master & 2 Worker Nodes
 - apt install kubeadm -y
 - kubeadm version
 - vi /etc/docker/daemon.json
-- {
-  {
+-     {
       "exec-opts": ["native.cgroupdriver=systemd"]
-  }
-  }
+    }
 - systemctl daemon-reload
 - systemctl restart docker.service
 - systemctl status docker.service
