@@ -2,7 +2,7 @@
 Create 3 GCP instances : 1 Master & 2 Worker Nodes
 
 #### Execute the below commands on all 3 nodes (1 Master & 2 Worker Nodes):
-- sudo su -
+-     sudo su -
 - apt update
 - apt install docker.io -y
 - docker version
